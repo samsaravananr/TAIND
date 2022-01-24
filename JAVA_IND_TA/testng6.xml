@@ -4,10 +4,7 @@
 
 <test name="TestngTestDemo">
 <classes>
-
 <class name="TestNGDemo.TestNGDemo4"></class>
-
-
 </classes>
 </test>
 
@@ -15,11 +12,7 @@
 
 <test name="TestngTestDemo1">
 <classes>
-
-
 <class name="TestNGDemo.TestNGDemo5"></class>
-
 </classes>
 </test>
-
 </suite>

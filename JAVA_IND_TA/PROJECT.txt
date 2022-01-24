@@ -1,0 +1,43 @@
+Project : Data Driven Framework using Selenium and TestNG
+
+STEP01: Create a TestNG Class called DDF
+STEP02: Create a TS001 Annotation
+STEP03: Call Excel Read Method 
+STEP04: RUN The Test 
+STEP05: Create a test inside TS001 that will do the followings
+	1. Open Amazon.in
+	2. Enter any product in the search box
+	3. Click Search Button
+	4. Capture the Title and Print
+STEP06: RUN THE TEST
+
+NOTE: NO hard coded datas (EX: sendkeys("Apple Iphone")
+VERY IMPORTANT : ADD COMMENTS WHEREEVER REQUIRED
+                 CLEAN CODE
+		 MEANINGFUL MEMBER NAMES
+
+
+STEP07: REPLACE THE VARIABLE SEARCH DATA WITH XDATA SEARCH
+STEP08: Search the data which has execute flag as Y
+STEP09: if Expected Title (Excel Sheet) matches your actual title
+	Then 
+	PRINT "PASS"
+	else
+	PRINT "FAIL"
+
+For Screenshot JARS: https://commons.apache.org/proper/commons-io/download_io.cgi
+
+
+STEP10: CAPTURE THE TITLE and Store it in XDATA 5th column
+STEP11: Instead of Printing PASS and FAIL (STEP 09) It should store the PASS OR FAIL in the STATUS COLUMN OF XDATA
+STEP12: It should take a screenshot after Entering test data and click search button (FileName should be TDID Column.png)
+STEP13: It should update the Screenshot file path in the Excel Sheet
+
+STEP14: Write the results (XDATA) to the Excel Sheet
+
+
+
+
+
+
+

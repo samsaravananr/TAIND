@@ -3,8 +3,9 @@
 <suite name="TestngSuiteDemo">
 <test name="TestDemo1">
 <classes>
-<class name="TestNGDemo.TestNGDAY1"></class>
+
 <class name="TestNGDemo.TestNGDAY2"></class>
+<class name="TestNGDemo.TestNGDAY1"></class>
 </classes>
 </test>
 

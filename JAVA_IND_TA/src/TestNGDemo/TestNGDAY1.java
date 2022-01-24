@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 
 
@@ -38,6 +39,8 @@ public class TestNGDAY1
 		Thread.sleep(2000);
 		
 		Assert.assertEquals("Sam", "Sam");
+		
+		Reporter.log("This is from TESTNG........................");
 		
 		
 	}

@@ -1,6 +1,11 @@
 package TestNGDemo;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,7 +22,7 @@ public class TestNGDemo5
 	public static WebDriver myD;
 
 	@Test
-	public void TS002() throws InterruptedException
+	public void TS002() throws Exception
 	{
 		vURL="https://www.amazon.in";
 		
@@ -32,8 +37,9 @@ public class TestNGDemo5
 			//tagname[@attribute='value' and @attribute='value']
 		
 		myD.findElement(By.xpath("//span[@class='nav-line-2 nav-progressive-content']")).click();
+		takeSnapShot(myD, "D://TA.png");
 
-		Assert.assertEquals("Saravananr", "Sam");
+	//	Assert.assertEquals("Saravananr", "Sam");
 		Thread.sleep(2000);
 		
 	
@@ -52,6 +58,27 @@ public class TestNGDemo5
 		myD.close();
 	}
 	
+	
+	public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
+
+        //Convert web driver object to TakeScreenshot
+
+        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+
+        //Call getScreenshotAs method to create image file
+
+                File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+
+            //Move image file to new destination
+
+                File DestFile=new File(fileWithPath);
+
+                //Copy file at destination
+
+                FileUtils.copyFile(SrcFile, DestFile);
+
+    }
+
 	
 	
 	
